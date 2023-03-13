@@ -1,14 +1,14 @@
-import { AppBar, Toolbar, Typography, Button, Box, Link } from '@mui/material';
-import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import { AppBar, Toolbar, Box, Link } from '@mui/material';
+// import { useTranslation } from 'react-i18next';
+// import { useLocation } from 'react-router-dom';
 
 export const Header = () => {
-  const { t } = useTranslation();
-  const location = useLocation();
-  const isOnUploadPage = location.pathname.includes('upload');
+  // const { t } = useTranslation();
+  // const location = useLocation();
+  // const isOnUploadPage = location.pathname.includes('upload');
   const base = process.env.PUBLIC_URL || '';
   const home = base + '/#/';
-  const upload = base + '/#/upload';
+  // const upload = base + '/#/upload';
   return (
     <AppBar position="static" color="transparent" sx={{ marginBottom: 4 }}>
       <Toolbar>
@@ -31,21 +31,21 @@ export const Header = () => {
               // src="yopass.svg"
               src="rebura.svg"
             />
-          </Typography>
+
         </Link>
         <Box
           sx={{
             marginLeft: 'auto',
           }}
         >
-          <Button
+          {/*<Button
             component={Link}
             href={isOnUploadPage ? home : upload}
             variant="contained"
             color="primary"
           >
             {isOnUploadPage ? t('header.buttonHome') : t('header.buttonUpload')}
-          </Button>
+          </Button>*/}
         </Box>
       </Toolbar>
     </AppBar>
