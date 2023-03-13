@@ -13,9 +13,7 @@ export const Header = () => {
     <AppBar position="static" color="transparent" sx={{ marginBottom: 4 }}>
       <Toolbar>
         <Link href={home} color="inherit" underline="none">
-          <Typography variant="h6" component="div">
-            {/* Yopass */}
-            <Box
+          <Box
               sx={{
                 verticalAlign: 'middle',
                 paddingLeft: '5px',
@@ -31,7 +29,6 @@ export const Header = () => {
               // src="yopass.svg"
               src="rebura.svg"
             />
-
         </Link>
         <Box
           sx={{

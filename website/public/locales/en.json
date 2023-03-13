@@ -41,9 +41,9 @@
   "result": {
     "title": "Secret stored in database",
     "subtitleDownloadOnce": "Remember that secrets can only be downloaded once if not set otherwise. So do not open the link yourself.",
-    "subtitleChannel": "The cautious should send the decryption key in a separate communication channel.",
+    "subtitleChannel": "Please ensure that you do not send the link and the decryption key to the receiving party in the same message. Send them separately!",
     "rowLabelOneClick": "One-click link",
-    "rowLabelShortLink": "Short link",
+    "rowLabelShortLink": "Link",
     "rowLabelDecryptionKey": "Decryption Key"
   },
   "secret": {

@@ -25,23 +25,27 @@ const Result = ({ uuid, password, prefix, customPassword }: ResultProps) => {
     (process.env.PUBLIC_URL ||
       `${window.location.protocol}//${window.location.host}`) + `/#/${prefix}`;
   const short = `${base}/${uuid}`;
-  const full = `${short}/${password}`;
+  // const full = `${short}/${password}`;
   const { t } = useTranslation();
 
   return (
     <Box>
       <Typography variant="h4">{t('result.title')}</Typography>
-      <Typography>
+      <br />
+      <Typography variant="subtitle1">
         {t('result.subtitleDownloadOnce')}
-        <br />
+      </Typography>
+      <br />
+      <Typography variant="subtitle1" color="secondary">
         {t('result.subtitleChannel')}
       </Typography>
+      <br />
       <TableContainer>
         <Table>
           <TableBody>
-            {!customPassword && (
+            {/*{!customPassword && (
               <Row label={t('result.rowLabelOneClick')} value={full} />
-            )}
+            )}*/}
             <Row label={t('result.rowLabelShortLink')} value={short} />
             <Row label={t('result.rowLabelDecryptionKey')} value={password} />
           </TableBody>
