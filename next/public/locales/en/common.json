@@ -1,6 +1,9 @@
 {
   "create": {
-    "title": "Encrypt message",
+    "toolname": "Rebura Sensitive Data Exchange",
+    "toolsummary": "This tool can be used to encrypt sensitive information before you pass it to Rebura, or we pass it back to you. It will encrypt locally in the browser so that no unencrypted data is sent from your computer. ",
+    "title": "Encrypt a message",
+    "subtitle": "Paste in any sensitive information below. It will be encrypted in your browser and securely stored. Once encrypted, you will be given options on how to share the message",
     "inputSecretLabel": "Secret message",
     "inputSecretPlaceholder": "Message to encrypt locally in your browser",
     "buttonEncrypt": "Encrypt Message",
@@ -38,9 +41,9 @@
   "result": {
     "title": "Secret stored in database",
     "subtitleDownloadOnce": "Remember that secrets can only be downloaded once if not set otherwise. So do not open the link yourself.",
-    "subtitleChannel": "The cautious should send the decryption key in a separate communication channel.",
+    "subtitleChannel": "Please ensure that you do not send the link and the decryption key to the receiving party in the same message. Send them separately!",
     "rowLabelOneClick": "One-click link",
-    "rowLabelShortLink": "Short link",
+    "rowLabelShortLink": "Link",
     "rowLabelDecryptionKey": "Decryption Key"
   },
   "secret": {
@@ -59,7 +62,7 @@
     "dialogCancel": "Cancel"
   },
   "attribution": {
-    "createdBy": "Created by",
+    "createdBy": "Original Creator - ",
     "translatedBy": "Translated by",
     "translatorName": "",
     "translatorLink": ""
